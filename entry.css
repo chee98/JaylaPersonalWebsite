@@ -1,0 +1,106 @@
+body{
+    /* background-image: url("darkplants.jpg");
+    background-size:cover; */
+    font-family: 'Spartan', sans-serif;
+    background-color: black;
+    color:white;
+}
+
+#scroll{
+    position: fixed;
+    right: 70px;
+    top: 300px;
+    z-index: 10;
+}
+.scroll-item{
+    margin-top:40px;
+}
+#scroll img{
+    float:right;
+    height:60px;
+
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+}
+#scroll img:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+#job{
+    padding-top:100px;
+    padding-left:15%;
+    background-image: url(performance.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:700px;
+    color:white;
+    font-size: 30px;
+    margin-bottom:200px;
+}
+
+#name{
+    position: absolute;
+    left:100px;
+    bottom:-150;
+    color:white;
+    font-size: 150px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+#trans{
+    position: absolute;
+    bottom:-1500px;
+    text-align: center;
+    
+}
+#trans img{
+    height:300px;
+}
+#about{
+    color:white;
+    text-align: center;
+    /* background-color:rgba(0, 0,0, 0.5); */
+}
+#about img{
+    height:500px;
+}
+
+#music{
+    margin-top:200px;
+    padding-left:15%;
+}
+/* #music img{
+    height:300px;
+} */
+#gren img{
+    height:300px;
+}
+#gren{
+    left:750px;
+    position: absolute;
+}
+#youtube{
+    margin-top: 100px;
+    text-align: center;
+}
+/* 
+#more:hover{
+    font-weight:bold;
+    text-decoration: underline;
+} */
+
+#love{
+    color:black;
+    background-color: white;
+    margin-top: 200px;
+    padding-top:100px;
+    padding-left: 15%;
+    padding-bottom: 100px;
+}
+
+#love img{
+    height:500px;
+}
