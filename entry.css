@@ -1,23 +1,39 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     /* background-image: url("darkplants.jpg");
     background-size:cover; */
     font-family: 'Spartan', sans-serif;
     background-color: black;
     color:white;
+    
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE and Edge */
+  body {
+    -ms-overflow-style: none;
+  }
+
 
 #scroll{
     position: fixed;
-    right: 70px;
-    top: 300px;
+    right: 30px;
+    top: 200px;
     z-index: 10;
 }
 .scroll-item{
     margin-top:40px;
 }
+
 #scroll img{
     float:right;
     height:60px;
+    width:60px;
 
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
@@ -47,7 +63,13 @@ body{
     color:white;
     font-size: 150px;
     font-family: 'Bebas Neue', cursive;
+}
 
+#contact{
+    position: absolute;
+    right:150px;
+    bottom:-100;
+    font-size: 25px;
 }
 
 #trans{
@@ -63,6 +85,9 @@ body{
     color:white;
     text-align: center;
     /* background-color:rgba(0, 0,0, 0.5); */
+}
+#bio{
+    text-align:left;
 }
 #about img{
     height:500px;
@@ -91,7 +116,9 @@ body{
     font-weight:bold;
     text-decoration: underline;
 } */
-
+/*#more{
+    text-align: bottom;
+}*/
 #love{
     color:black;
     background-color: white;
@@ -104,3 +131,9 @@ body{
 #love img{
     height:500px;
 }
+
+#footer{
+    text-align: center;
+    padding: 10px 0px;
+}
+

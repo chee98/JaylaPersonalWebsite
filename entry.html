@@ -7,20 +7,26 @@
         <link rel="icon" href="flower.png" type="image/icon type">
     </head>
     <body>
+        
         <div id="scroll" class="container">
             <div class="row">
-                <div class="scroll-item col">
-                    <img src="redflower.png">
+                <div id="topfl" class="scroll-item col" >
+                    <img src="flower.png" onclick="topFlower()">
                 </div>
             </div>
             <div class="row">
-                <div class="scroll-item col">
-                    <img src="flower.png">
+                <div id="aboutfl" class="scroll-item col">
+                    <img src="flower.png" onclick="aboutFlower()">
                 </div>
             </div>
             <div class="row">
-                <div class="scroll-item col">
-                    <img src="flower.png">
+                <div id="musicfl" class="scroll-item col">
+                    <img src="flower.png" onclick="musicFlower()">
+                </div>
+            </div>
+            <div class="row">
+                <div id="lovefl" class="scroll-item col">
+                    <img src="flower.png" onclick="loveFlower()">
                 </div>
             </div>
         </div>
@@ -32,6 +38,10 @@
                     <div id="name" >
                         Jayla Chee
                     </div>
+                    <div id="contact">
+                        Phone: (650)200-6256<br />
+                        Email: jayla@ymail.com
+                    </div>
                 </div>
                 
             </div>
@@ -41,11 +51,11 @@
                 </div>
             </div> -->
             <div class='row' id='about'>
-                <div class='col '>
+                <div class='col' >
                     <img src='upshot.jpg'>
                 </div>
                 <div id='bio' class='col'>
-                    <strong><h1>About Me</h1></strong>
+                    <!-- <strong><h1>Bio</h1></strong> -->
                     <br>
                     Hi, I'm Jayla.
                     <br><br>
@@ -65,21 +75,24 @@
                     <img src='https://purepng.com/public/uploads/large/purepng.com-peapeaspherical-seedpod-fruitbotanically-fruitfood-1701527269923dtf5p.png'>
                 </div>
             </div> -->
-            <div id="music" class='row'>
+            <div id="music" class='row' onscroll="alert('yoooo')">
                 <div class='col'>
                     <strong><h1>My Music</h1></strong>
                     <br>
                     I think that music is like homegrown vegetables. 
                     <br><br>
                     Read more about my thoughts on music and vegetables here <img  style="height:30px" src="https://i.ya-webdesign.com/images/right-arrow-white-png-2.png">
-                    
+                    <br><br>
+                    Check out my music resume here-><br>
                 </div>
                 <div class='col'>
                     Check out my YouTube for some videos of me playing:<br>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/O-EgoaZDEOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
                 </div>
             </div>
-            <div id="gren"><img src='transparentgrendel.png'></div>
+            <div id="gren">
+                <img src='transparentgrendel.png'>
+            </div>
             <!-- <div class='row' id="trans">
                 <div class='col'>
                     <img src='transparentgrendel.png'>
@@ -95,7 +108,7 @@
                     I love Grendel and Legumes and trees and all plants.
                 </div>
             </div>
-            
+            <div id="footer">Powered by legumes</div>
         </div>
         
 
@@ -103,5 +116,79 @@
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            
+
+            
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            //document.getElementById("myBar").style.width = scrolled + "%";
+            console.log(scrolled);
+            }
+            function topFlower(){
+                sessionStorage.setItem("current","job")
+                var job = document.getElementById("job")
+                job.scrollIntoView();
+                document.getElementById("topfl").getElementsByTagName('img')[0].src='redflower.png'
+                document.getElementById("aboutfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("musicfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("lovefl").getElementsByTagName('img')[0].src='flower.png'
+            }
+            function aboutFlower(){
+                sessionStorage.setItem("current","about")
+                var about = document.getElementById("about")
+                about.scrollIntoView();
+                document.getElementById("topfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("aboutfl").getElementsByTagName('img')[0].src='redflower.png'
+                document.getElementById("musicfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("lovefl").getElementsByTagName('img')[0].src='flower.png'
+            }
+            function musicFlower(){
+                sessionStorage.setItem("current","music")
+                var music = document.getElementById("music")
+                music.scrollIntoView();
+                document.getElementById("topfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("aboutfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("musicfl").getElementsByTagName('img')[0].src='redflower.png'
+                document.getElementById("lovefl").getElementsByTagName('img')[0].src='flower.png'
+            }
+
+            function loveFlower(){
+                sessionStorage.setItem("current","love")
+                var love = document.getElementById("love")
+                love.scrollIntoView();
+                document.getElementById("topfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("aboutfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("musicfl").getElementsByTagName('img')[0].src='flower.png'
+                document.getElementById("lovefl").getElementsByTagName('img')[0].src='redflower.png'
+            }
+
+           // alert("yo")
+            // $(document).ready(function(){
+            //     // Add smooth scrolling to all links
+               
+            //     $("topfl").on('click', function(event) {
+            //         alert("yo")
+            //         // Make sure this.hash has a value before overriding default behavior
+            //        // if (this.hash !== "") {
+            //         // Prevent default anchor click behavior
+            //         //event.preventDefault();
+
+            //         // Store hash
+            //         //var hash = this.hash;
+
+            //         // Using jQuery's animate() method to add smooth page scroll
+            //         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            //         $('html, body').animate({
+            //             scrollTop: $("aboutfl").offset().top
+            //         },'slow');
+            //     });
+            // });
+        </script>
     </body>
 </html>
