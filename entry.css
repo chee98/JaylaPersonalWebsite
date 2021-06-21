@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
     padding-top:100px;
     padding-left:15%;
     background-image: url(performance.png);
+    /*background-image: url(standing_fendi.jpeg);*/
     background-size:cover;
     background-repeat: no-repeat;
     height:700px;
@@ -88,6 +89,9 @@ body::-webkit-scrollbar {
 }
 #bio{
     text-align:left;
+    padding-right: 100px;
+    margin-right: 50px;
+    line-height: 200%;
 }
 #about img{
     height:500px;
@@ -96,42 +100,58 @@ body::-webkit-scrollbar {
 #music{
     margin-top:200px;
     padding-left:15%;
-}
-/* #music img{
-    height:300px;
-} */
-#gren img{
-    height:300px;
-}
-#gren{
-    left:750px;
-    position: absolute;
-}
-#youtube{
-    margin-top: 100px;
-    text-align: center;
-}
-/* 
-#more:hover{
-    font-weight:bold;
-    text-decoration: underline;
-} */
-/*#more{
-    text-align: bottom;
-}*/
-#love{
     color:black;
     background-color: white;
     margin-top: 200px;
     padding-top:100px;
     padding-left: 15%;
     padding-bottom: 100px;
+    font-size: 25px;
+    line-height: 300%;
+}
+
+#music img {
+    height: 500px;
+}
+
+#music a {
+    color: black;
+}
+
+#music a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#youtube{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#love{
+    /*color:black;
+    background-color: white;*/
+/*    margin-top: 200px;
+    padding-top:100px;
+    padding-left: 15%;
+    padding-bottom: 100px;*/
+    padding-top: 100px;
+    padding-right: 20%;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 #love img{
     height:500px;
 }
 
+#carouselExampleIndicators {
+    margin-right: 200px;
+}
+
+.carouselItem {
+    text-align: center;
+}
 #footer{
     text-align: center;
     padding: 10px 0px;
