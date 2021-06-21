@@ -69,8 +69,8 @@ body::-webkit-scrollbar {
 #contact{
     position: absolute;
     right:150px;
-    bottom:-100;
-    font-size: 25px;
+    bottom:-50;
+    font-size: 20px;
 }
 
 #trans{
@@ -86,6 +86,11 @@ body::-webkit-scrollbar {
     color:white;
     text-align: center;
     /* background-color:rgba(0, 0,0, 0.5); */
+}
+
+#about figcaption {
+    font-size: 20px;
+    line-height: 200%;
 }
 #bio{
     text-align:left;
@@ -155,5 +160,6 @@ body::-webkit-scrollbar {
 #footer{
     text-align: center;
     padding: 10px 0px;
+    margin-bottom: 20px;
 }
 
